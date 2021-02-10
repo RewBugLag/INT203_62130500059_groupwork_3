@@ -20,7 +20,8 @@
 </head>
 <body>
     <div id="app">
-        <h1 class="text-xl">Photo Gallery ( {{countPhoto}} )</h1>
+        <h1 class="text-xl">Photo Gallery ({{countPhoto}})</h1>
+        <h1 class="text-xl">Liked ({{countHeart}})</h1>
         <ul v-for="(cont, index) in conts">
             <li class="py-4" v-on:click="toggleHeart(index)">
                 <img class="inline" v-bind:src="cont.image" width="400" height="400">

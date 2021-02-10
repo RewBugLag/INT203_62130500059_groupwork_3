@@ -16,6 +16,9 @@ const app = {
     computed: {
         countPhoto() {
             return this.conts.length
+        },
+        countHeart() {
+            return this.conts.filter( c => c.heart ).length
         }
     }
 }
